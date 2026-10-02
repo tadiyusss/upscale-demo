@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.classList.add("js");</script>
+  <title>About Us — Aurelia Dental Studio</title>
+  <meta name="description" content="Learn about Aurelia Dental Studio: our story, our philosophy of patient-centered dentistry, our approach to care, and the studio environment we've built in Makati.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Aurelia Dental Studio — home">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect width="48" height="48" rx="14" fill="#1E398C"/>
+          <path d="M24 13.4c-2.6 0-3.4-1.5-6.4-1.5-3.9 0-6.6 3.1-6.6 7.1 0 5.7 2.7 7.3 3.9 12 .5 2.2 1 7.6 3.7 7.6 2.5 0 1.9-6.6 5.4-6.6s2.9 6.6 5.4 6.6c2.7 0 3.2-5.4 3.7-7.6 1.2-4.7 3.9-6.3 3.9-12 0-4-2.7-7.1-6.6-7.1-3 0-3.8 1.5-6.4 1.5Z" fill="#fff"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">Aurelia</span>
+          <span class="brand-sub">Dental Studio</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-cta-mobile"><a class="btn btn--primary" href="contact.html">Book Appointment</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm header-book" href="contact.html">Book Appointment</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span class="bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-header page-header--about">
+      <div class="container page-header-layout">
+        <div class="page-header-copy">
+          <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><span aria-current="page">About</span></li>
+            </ol>
+          </nav>
+          <p class="page-header-eyebrow">About our clinic</p>
+          <h1 class="h1">Modern dentistry, centered around you.</h1>
+          <p class="lede">Learn about our approach, clinic environment, technology, and commitment to comfortable dental care.</p>
+        </div>
+        <figure class="page-header-media">
+          <img src="assets/images/banner-clinic.jpg" alt="A bright, modern treatment room at Aurelia Dental Studio." width="620" height="407">
+        </figure>
+      </div>
+    </div>
+
+    <!-- Our story -->
+    <section class="section section--tight-top" aria-labelledby="story-title">
+      <div class="container split split--reverse">
+        <div class="split-copy">
+          <p class="eyebrow">Our story</p>
+          <h2 class="h2 story-title" id="story-title">Started with two chairs and a clear idea</h2>
+          <p class="story-lead">Aurelia Dental Studio opened in 2016, when Dr. Eleanor Vance left a large group practice to build something smaller and more deliberate: a clinic where appointment times are generous, treatment plans are written down, and patients see the same familiar faces at every visit.</p>
+          <p>The studio has grown since then — a full clinical team, dedicated hygiene suites, and on-site imaging — but the founding idea hasn't changed. We would rather do fewer things carefully than many things quickly.</p>
+          <p>Today, most of our new patients still arrive the way our first ones did: on the recommendation of someone they trust.</p>
+        </div>
+        <figure class="split-media media-accent">
+          <img src="assets/images/about-interior.jpg" alt="A bright, modern dental treatment room with white cabinetry and a single chair." loading="lazy" width="700" height="560">
+          <figcaption>One of our private treatment suites, designed to feel calm rather than clinical.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="section section--ice" aria-labelledby="philosophy-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Our philosophy</p>
+          <h2 class="h2" id="philosophy-title">How we think about dentistry</h2>
+        </div>
+        <blockquote class="pull-quote">
+          "The best dental work is the kind you rarely need. Our job is to explain clearly, treat precisely, and help you keep your own teeth for as long as possible."
+          <cite>Dr. Eleanor Vance — Founder</cite>
+        </blockquote>
+
+        <div class="section" style="padding-block: clamp(2.5rem,5vw,3.5rem) 0">
+          <ul class="value-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8.5 12.2 2.4 2.4 4.6-5.2"/></svg>
+              <span><strong>Prevention first.</strong> Regular care and early intervention prevent most of the treatment people fear.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8.5 12.2 2.4 2.4 4.6-5.2"/></svg>
+              <span><strong>Personalized plans.</strong> Your history, your goals, and your budget shape the plan — not a template.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8.5 12.2 2.4 2.4 4.6-5.2"/></svg>
+              <span><strong>Honest communication.</strong> We explain what we see, what we recommend, and what can reasonably wait.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8.5 12.2 2.4 2.4 4.6-5.2"/></svg>
+              <span><strong>Long-term thinking.</strong> We plan treatment for the next decade of your oral health, not the next invoice.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our approach -->
+    <section class="section" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Our approach</p>
+          <h2 class="h2" id="approach-title">What a visit with us actually looks like</h2>
+          <p class="lede">Whether it's a routine check-up or a full treatment plan, every patient moves through the same careful sequence.</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <div>
+              <h3>Consultation</h3>
+              <p>We start with a conversation — your dental history, your concerns, and what you want to achieve. No treatment happens at this first meeting unless you ask for it.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <div>
+              <h3>Examination &amp; diagnosis</h3>
+              <p>A thorough clinical exam with digital imaging where needed. We show you what we see on screen and explain it in plain language.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <div>
+              <h3>Treatment planning</h3>
+              <p>You receive a written plan with clear options, sequencing, and pricing. You take it home, think about it, and decide in your own time.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">4</span>
+            <div>
+              <h3>Treatment</h3>
+              <p>Appointments are scheduled with enough time to work carefully and answer questions. Tell us if you need a pause — we'll stop.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">5</span>
+            <div>
+              <h3>Follow-up &amp; prevention</h3>
+              <p>After treatment, we agree on a recall schedule and a simple home-care routine, so results last and future visits stay routine.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Environment -->
+    <section class="section section--ice" aria-labelledby="environment-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Our environment</p>
+          <h2 class="h2" id="environment-title">A studio designed to lower your shoulders</h2>
+          <p class="lede">Dental anxiety is common, and the building itself can help or hurt. We designed our studio to help: natural light, quiet rooms, and no overlapping chairs.</p>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-main">
+            <img src="assets/images/about-surgery.jpg" alt="A spacious treatment room with two modern dental chairs and large windows." loading="lazy" width="640" height="496">
+            <figcaption>Spacious treatment rooms keep the experience feeling private and unhurried.</figcaption>
+          </figure>
+          <figure class="gallery-side">
+            <img src="assets/images/about-interior.jpg" alt="A clean, well-lit dental operatory with organized cabinetry." loading="lazy" width="480" height="528">
+            <figcaption>Every instrument suite is prepared and sterilized between patients.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology -->
+    <section class="section" aria-labelledby="tech-title">
+      <div class="container split">
+        <div class="split-copy">
+          <p class="eyebrow">Technology &amp; facilities</p>
+          <h2 class="h2" id="tech-title">Modern tools, in service of simpler visits</h2>
+          <p>We invest in equipment only where it makes your care more precise, faster, or more comfortable. Technology never replaces clinical judgment — it supports it.</p>
+          <ul class="check-list">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8.5 12.2 2.4 2.4 4.6-5.2"/></svg>
+              <span><strong>Digital radiography</strong> — detailed images with significantly less radiation than traditional film, ready in seconds.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8.5 12.2 2.4 2.4 4.6-5.2"/></svg>
+              <span><strong>Intraoral cameras</strong> — see exactly what your dentist sees, on screen, during your exam.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8.5 12.2 2.4 2.4 4.6-5.2"/></svg>
+              <span><strong>On-site panoramic imaging</strong> — full-jaw scans for implant and orthodontic planning, without a referral elsewhere.</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8.5 12.2 2.4 2.4 4.6-5.2"/></svg>
+              <span><strong>Documented sterilization</strong> — hospital-grade instrument reprocessing with tracked cycles for every tray.</span>
+            </li>
+          </ul>
+        </div>
+        <figure class="split-media">
+          <img src="assets/images/tech-imaging.jpg" alt="A dentist studying dental x-ray films on a backlit viewing panel." loading="lazy" width="700" height="560">
+          <figcaption>Reviewing imaging together is part of every diagnosis we make.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section--dark cta-band" aria-labelledby="about-cta-title">
+      <div class="container">
+        <p class="eyebrow">Next steps</p>
+        <h2 class="h2" id="about-cta-title">Come and see the studio for yourself</h2>
+        <p>The easiest way to understand how we work is to visit. Book a first consultation, or take a moment to meet the dentists you'd be trusting with your care.</p>
+        <div class="cta-actions">
+          <a class="btn btn--accent" href="team.html">Meet Our Team</a>
+          <a class="btn btn--ghost-light" href="contact.html">Book an Appointment</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Aurelia Dental Studio — home">
+            <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect width="48" height="48" rx="14" fill="#99EFFD"/>
+              <path d="M24 13.4c-2.6 0-3.4-1.5-6.4-1.5-3.9 0-6.6 3.1-6.6 7.1 0 5.7 2.7 7.3 3.9 12 .5 2.2 1 7.6 3.7 7.6 2.5 0 1.9-6.6 5.4-6.6s2.9 6.6 5.4 6.6c2.7 0 3.2-5.4 3.7-7.6 1.2-4.7 3.9-6.3 3.9-12 0-4-2.7-7.1-6.6-7.1-3 0-3.8 1.5-6.4 1.5Z" fill="#122251"/>
+            </svg>
+            <span class="brand-text">
+              <span class="brand-name">Aurelia</span>
+              <span class="brand-sub">Dental Studio</span>
+            </span>
+          </a>
+          <p>An independent dental practice in Makati, providing considered general, cosmetic and specialist-led care.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Footer — explore">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact &amp; Booking</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Footer — services">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="services.html#general-dentistry">General Dentistry</a></li>
+            <li><a href="services.html#cosmetic-dentistry">Cosmetic Dentistry</a></li>
+            <li><a href="services.html#dental-implants">Dental Implants</a></li>
+            <li><a href="services.html#orthodontics">Orthodontics</a></li>
+            <li><a href="services.html#emergency-care">Emergency Care</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col footer-contact">
+          <h3>Visit us</h3>
+          <ul>
+            <li>2/F, 121 Dela Rosa Street,<br>Legazpi Village, Makati City</li>
+            <li><a href="tel:+63285550148">(02) 8555-0148</a></li>
+            <li><a href="mailto:hello@aureliadental.ph">hello@aureliadental.ph</a></li>
+          </ul>
+          <p class="footer-hours">Mon–Fri 8am–5pm<br>Sat 9am–1pm · Sun closed</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Aurelia Dental Studio. All rights reserved.</p>
+        <p>Aurelia Dental Studio is a fictional practice created as a design concept.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Menu — Ember &amp; Vine</title>
+  <meta name="description" content="A short, seasonal menu cooked over oak embers. Starters, hearth plates, hand-cut pasta, dessert, and a considered wine list. Open Tuesday to Saturday from 5pm.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Ember <em>&amp;</em> Vine</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" aria-current="page" href="menu.html">Menu</a></li>
+          <li><a class="nav-link" href="story.html">Our Story</a></li>
+          <li><a class="nav-link" href="experience.html">Experience</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary header-cta" href="contact.html#reserve">Reserve</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mnav" id="mnav">
+    <nav aria-label="Mobile">
+      <ul class="mnav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a aria-current="page" href="menu.html">Menu</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="mnav-meta">
+      <strong><a href="tel:+63281234567">(02) 8123 4567</a></strong>
+      <span>48 Marlow Street, Riverside District, Pasig City</span>
+      <span>Tuesday – Saturday, from 5pm</span>
+    </p>
+  </div>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-media" aria-hidden="true">
+        <img src="assets/images/platter-figs.jpg" alt="" loading="eager" decoding="async">
+      </div>
+      <div class="container page-hero-inner">
+        <p class="eyebrow">Seasonal &middot; Changes Weekly</p>
+        <h1>The menu.</h1>
+        <p class="lede">Everything here was written on Thursday morning, after the farmers&rsquo; market. If something on this page is gone by Friday, that&rsquo;s the deal we made with the fire.</p>
+      </div>
+    </section>
+
+    <!-- CATEGORY NAV -->
+    <div class="menu-chips-wrap">
+      <div class="container">
+        <nav class="menu-chips" aria-label="Menu sections">
+          <a class="chip is-active" href="#starters">Starters</a>
+          <a class="chip" href="#hearth">From the Hearth</a>
+          <a class="chip" href="#pasta">Pasta &amp; Grains</a>
+          <a class="chip" href="#sides">Sides</a>
+          <a class="chip" href="#dessert">Dessert</a>
+          <a class="chip" href="#drinks">Wine &amp; Bar</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- STARTERS -->
+    <section id="starters" class="menu-category" aria-labelledby="h-starters">
+      <div class="container">
+        <div class="mc-head" data-reveal>
+          <h2 id="h-starters">Starters</h2>
+          <div class="diet-legend" aria-label="Dietary key">
+            <span><b>v</b> vegetarian</span>
+            <span><b>gf</b> gluten-free</span>
+          </div>
+        </div>
+        <div class="dish-list" data-reveal>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Sourdough &amp; cultured butter</h3>
+              <span class="dish-tags">v</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;290</span>
+            </div>
+            <p class="dish-desc">Baked every morning, salted from the hearth.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Ember-roasted beetroot</h3>
+              <span class="dish-tags">v gf</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;420</span>
+            </div>
+            <p class="dish-desc">Whipped ricotta, toasted hazelnut, sherry vinegar.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Cured sea trout</h3>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;580</span>
+            </div>
+            <p class="dish-desc">Buttermilk, dill oil, pickled cucumber.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Burrata &amp; blood orange</h3>
+              <span class="dish-tags">v</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;550</span>
+            </div>
+            <p class="dish-desc">Pistachio, wildflower honey, olive crumb.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Charred octopus</h3>
+              <span class="dish-tags">gf</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;640</span>
+            </div>
+            <p class="dish-desc">Romesco, confit potato, smoked paprika oil.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERLUDE -->
+    <figure class="menu-interlude container" data-reveal>
+      <img src="assets/images/bread.jpg" alt="Torn sourdough with cultured butter on a linen cloth" loading="lazy" decoding="async">
+      <figcaption>This morning&rsquo;s bake, waiting by the oven door.</figcaption>
+    </figure>
+
+    <!-- FROM THE HEARTH -->
+    <section id="hearth" class="menu-category" aria-labelledby="h-hearth">
+      <div class="container">
+        <div class="mc-head" data-reveal>
+          <h2 id="h-hearth">From the Hearth</h2>
+          <p class="mc-note">Cooked over oak, finished on the embers.</p>
+        </div>
+        <div class="dish-list" data-reveal>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Ember-grilled tanigue</h3>
+              <span class="dish-tags">gf</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;1,050</span>
+            </div>
+            <p class="dish-desc">Grilled whole over oak; romesco, charred lemon, gremolata.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Oak-grilled salmon</h3>
+              <span class="dish-tags">gf</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;1,150</span>
+            </div>
+            <p class="dish-desc">Burnt lemon butter, sea herbs, new potatoes.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Brick-pressed chicken</h3>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;980</span>
+            </div>
+            <p class="dish-desc">Preserved lemon, charred spring onion, pan jus.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Whole roasted cauliflower</h3>
+              <span class="dish-tags">v gf</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;850</span>
+            </div>
+            <p class="dish-desc">Wood oven; tahini brown butter, dukkah, herbs.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Twelve-hour short rib</h3>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;1,380</span>
+            </div>
+            <p class="dish-desc">Smoked carrot purée, pickled chilli, marrow jus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERLUDE -->
+    <figure class="menu-interlude container" data-reveal>
+      <img src="assets/images/detail-pasta.jpg" alt="Close-up of hand-cut tagliatelle dressed with oxtail ragù" loading="lazy" decoding="async">
+      <figcaption>Tagliatelle, rolled and cut by hand each morning.</figcaption>
+    </figure>
+
+    <!-- PASTA & GRAINS -->
+    <section id="pasta" class="menu-category" aria-labelledby="h-pasta">
+      <div class="container">
+        <div class="mc-head" data-reveal>
+          <h2 id="h-pasta">Pasta &amp; Grains</h2>
+        </div>
+        <div class="dish-list" data-reveal>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Hand-cut tagliatelle</h3>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;890</span>
+            </div>
+            <p class="dish-desc">Slow oxtail ragù, aged parmesan, lemon gremolata.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Smoked ricotta cavatelli</h3>
+              <span class="dish-tags">v</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;820</span>
+            </div>
+            <p class="dish-desc">Charred spring greens, chilli, mint.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Ember risotto</h3>
+              <span class="dish-tags">v gf</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;790</span>
+            </div>
+            <p class="dish-desc">Carnaroli, roasted squash, sage brown butter, pecorino.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIDES -->
+    <section id="sides" class="menu-category" aria-labelledby="h-sides">
+      <div class="container">
+        <div class="mc-head" data-reveal>
+          <h2 id="h-sides">Sides</h2>
+        </div>
+        <div class="dish-list" data-reveal>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Ember potatoes</h3>
+              <span class="dish-tags">gf</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;320</span>
+            </div>
+            <p class="dish-desc">Cooked in beef dripping, rosemary, garlic.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Charred hispi cabbage</h3>
+              <span class="dish-tags">v</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;340</span>
+            </div>
+            <p class="dish-desc">Caesar-style dressing, sourdough crumb.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Hearth greens</h3>
+              <span class="dish-tags">v gf</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;290</span>
+            </div>
+            <p class="dish-desc">Spring greens, garlic, chilli, lemon.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERLUDE -->
+    <figure class="menu-interlude container" data-reveal>
+      <img src="assets/images/dessert.jpg" alt="Slice of dark chocolate tart with sea salt" loading="lazy" decoding="async">
+      <figcaption>Dark chocolate tart — the one constant since 2019.</figcaption>
+    </figure>
+
+    <!-- DESSERT -->
+    <section id="dessert" class="menu-category" aria-labelledby="h-dessert">
+      <div class="container">
+        <div class="mc-head" data-reveal>
+          <h2 id="h-dessert">Dessert</h2>
+        </div>
+        <div class="dish-list" data-reveal>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Dark chocolate tart</h3>
+              <span class="dish-tags">v</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;420</span>
+            </div>
+            <p class="dish-desc">Sea salt, crème fraîche, cocoa-nib shortbread.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Burnt Basque cheesecake</h3>
+              <span class="dish-tags">v</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;420</span>
+            </div>
+            <p class="dish-desc">Macerated berries, lemon thyme.</p>
+          </div>
+          <div class="dish">
+            <div class="dish-head">
+              <h3 class="dish-name">Wood-roasted pear</h3>
+              <span class="dish-tags">v gf</span>
+              <span class="dish-leader" aria-hidden="true"></span>
+              <span class="dish-price price">&#8369;390</span>
+            </div>
+            <p class="dish-desc">Red wine caramel, toasted almond, bay leaf cream.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WINE & BAR -->
+    <section id="drinks" class="menu-category" aria-labelledby="h-drinks">
+      <div class="container drinks-split">
+        <div>
+          <div class="mc-head" data-reveal>
+            <h2 id="h-drinks">Wine &amp; Bar</h2>
+          </div>
+          <h3 class="label-rule" data-reveal>By the Glass</h3>
+          <div class="dish-list" data-reveal>
+            <div class="dish">
+              <div class="dish-head">
+                <h3 class="dish-name">Txakoli Getariako, Ameztoi</h3>
+                <span class="dish-leader" aria-hidden="true"></span>
+                <span class="dish-price price">&#8369;480</span>
+              </div>
+              <p class="dish-desc">Crisp and saline — the Basque coast in a glass.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head">
+                <h3 class="dish-name">Chianti Classico, Felsina</h3>
+                <span class="dish-leader" aria-hidden="true"></span>
+                <span class="dish-price price">&#8369;590</span>
+              </div>
+              <p class="dish-desc">Sangiovese; bright cherry, earth, a little grip.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head">
+                <h3 class="dish-name">Rioja Crianza, Sierra Cantabria</h3>
+                <span class="dish-leader" aria-hidden="true"></span>
+                <span class="dish-price price">&#8369;550</span>
+              </div>
+              <p class="dish-desc">Tempranillo; dark fruit and oak spice — made for the short rib.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head">
+                <h3 class="dish-name">Dry cider, Asturias</h3>
+                <span class="dish-leader" aria-hidden="true"></span>
+                <span class="dish-price price">&#8369;340</span>
+              </div>
+              <p class="dish-desc">Poured high, drunk cold.</p>
+            </div>
+          </div>
+          <p class="cellar-note u-mt-md" data-reveal>Behind the bar sits a short cellar of around sixty bottles, mostly small growers. Ask about half-bottles and what&rsquo;s just been opened.</p>
+          <h3 class="label-rule u-mt-lg" data-reveal>From the Bar</h3>
+          <div class="dish-list" data-reveal>
+            <div class="dish">
+              <div class="dish-head">
+                <h3 class="dish-name">Ember Old Fashioned</h3>
+                <span class="dish-leader" aria-hidden="true"></span>
+                <span class="dish-price price">&#8369;580</span>
+              </div>
+              <p class="dish-desc">Smoke-torched rye, burnt orange.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head">
+                <h3 class="dish-name">Marlow Spritz</h3>
+                <span class="dish-leader" aria-hidden="true"></span>
+                <span class="dish-price price">&#8369;480</span>
+              </div>
+              <p class="dish-desc">Blood orange, cava, rosemary.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head">
+                <h3 class="dish-name">Fig Leaf Gimlet</h3>
+                <span class="dish-leader" aria-hidden="true"></span>
+                <span class="dish-price price">&#8369;520</span>
+              </div>
+              <p class="dish-desc">House fig-leaf cordial, lime.</p>
+            </div>
+            <div class="dish">
+              <div class="dish-head">
+                <h3 class="dish-name">Seedlip &amp; tonic</h3>
+                <span class="dish-tags">na</span>
+                <span class="dish-leader" aria-hidden="true"></span>
+                <span class="dish-price price">&#8369;340</span>
+              </div>
+              <p class="dish-desc">Garden peas &amp; hay distillate, citrus, tonic.</p>
+            </div>
+          </div>
+        </div>
+        <aside class="drinks-stack" data-reveal data-reveal-delay="140">
+          <figure>
+            <img src="assets/images/drink-cocktail.jpg" alt="A bartender garnishing the Marlow spritz at the bar" loading="lazy" decoding="async">
+            <figcaption>The Marlow Spritz, mixed at the bar.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/wine-glass.jpg" alt="A glass of cold white wine catching the evening light" loading="lazy" decoding="async">
+            <figcaption>Txakoli, poured cold.</figcaption>
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TASTING PANEL -->
+    <section class="section-sm rule-top" aria-label="Tasting menu">
+      <div class="container">
+        <div class="tasting-panel" data-reveal>
+          <div>
+            <p class="eyebrow">Friday &amp; Saturday</p>
+            <h2 class="u-mt-sm">The Hearth Table</h2>
+            <p class="mc-note u-mt-xs">Seven courses from the fire, served at the counter.</p>
+          </div>
+          <div class="tasting-side">
+            <p class="tasting-price">&#8369;3,200 <small>per guest</small></p>
+            <p class="tasting-extra">Wine pairing +&#8369;1,600 &middot; whole-table booking</p>
+            <a class="btn btn-primary" href="contact.html#reserve">Reserve the Counter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SMALL PRINT -->
+    <section class="section-sm rule-top">
+      <div class="container fineprint" data-reveal>
+        <p>Please mention allergies or dietary needs when you book — most dishes can be adapted with a day&rsquo;s notice, though the fire sets some limits.</p>
+        <p>A discretionary 10% service charge is added to tables of six or more, as customary in the Philippines.</p>
+        <p>The menu changes weekly and prices may shift with the market. All prices are inclusive of VAT.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-sm cta-band on-dark rule-top">
+      <div class="container" data-reveal>
+        <h2>Hungry? The hearth is lit from five.</h2>
+        <p>Walk-ins are always welcome at the bar. For the dining room, we recommend reserving ahead.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="contact.html#reserve">Reserve a Table</a>
+          <a class="btn btn-ghost-light" href="experience.html">See the Room</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">Ember <em>&amp;</em> Vine</a>
+          <p class="footer-tag">Live-fire cooking and a short seasonal menu, in an old print shop in Pasig City.</p>
+          <ul class="footer-social">
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Visit</h3>
+          <address>
+            <p>48 Marlow Street<br>Riverside District, Pasig City</p>
+          </address>
+          <ul>
+            <li><a href="tel:+63281234567">(02) 8123 4567</a></li>
+            <li><a href="mailto:hello@emberandvine.com">hello@emberandvine.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Hours</h3>
+          <div class="footer-hours">
+            <div><span>Tue – Thu</span><span>5 – 10pm</span></div>
+            <div><span>Fri – Sat</span><span>5 – 11pm</span></div>
+            <div><span>Sun</span><span>12 – 4pm</span></div>
+            <div><span>Mon</span><span>Closed</span></div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#reserve">Reservations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Ember &amp; Vine. A fictional restaurant, created as a design concept.</p>
+        <p>Photography via Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

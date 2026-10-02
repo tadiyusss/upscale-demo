@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Reservations — Ember &amp; Vine</title>
+  <meta name="description" content="Find Ember & Vine at 48 Marlow Street, Riverside District, Pasig City. Opening hours, directions, phone and email — plus a quick table reservation request.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Ember <em>&amp;</em> Vine</a>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="menu.html">Menu</a></li>
+          <li><a class="nav-link" href="story.html">Our Story</a></li>
+          <li><a class="nav-link" href="experience.html">Experience</a></li>
+          <li><a class="nav-link" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary header-cta" href="#reserve">Reserve</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mnav" id="mnav">
+    <nav aria-label="Mobile">
+      <ul class="mnav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="story.html">Our Story</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a aria-current="page" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="mnav-meta">
+      <strong><a href="tel:+63281234567">(02) 8123 4567</a></strong>
+      <span>48 Marlow Street, Riverside District, Pasig City</span>
+      <span>Tuesday – Saturday, from 5pm</span>
+    </p>
+  </div>
+
+  <main id="main">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero slim">
+      <div class="container page-hero-inner">
+        <p class="eyebrow">Visit &middot; Book &middot; Ask</p>
+        <h1>Marlow Street, ground floor.</h1>
+        <p class="lede">Reservations, directions, and everything else you might need — the practical bit of the evening.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT + RESERVATION -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <aside class="contact-info" aria-label="Contact information">
+
+            <div class="loc-block" data-reveal>
+              <h3>Reservations</h3>
+              <p>Request a table using the form and we&rsquo;ll confirm by email — usually within a couple of hours during service. The bar is always kept back for walk-ins.</p>
+              <p>For parties of seven or more, or to book the whole room, email us directly.</p>
+            </div>
+
+            <div class="loc-block" data-reveal data-reveal-delay="80">
+              <h3>Find Us</h3>
+              <address>
+                48 Marlow Street<br>
+                Riverside District, Pasig City<br>
+                Old Print House, ground floor
+              </address>
+              <p>Two blocks from the Rosario footbridge, across from the old bakeshop. Look for the copper flue.</p>
+              <a class="dir-link" href="https://www.google.com/maps/search/?api=1&amp;query=Riverside+Pasig+City" target="_blank" rel="noopener">Get directions&nbsp;&nearr;</a>
+            </div>
+
+            <div class="loc-block" data-reveal data-reveal-delay="160">
+              <h3>Hours</h3>
+              <dl>
+                <div class="hours-row"><dt>Tuesday – Thursday</dt><dd>5pm – 10pm</dd></div>
+                <div class="hours-row"><dt>Friday – Saturday</dt><dd>5pm – 11pm</dd></div>
+                <div class="hours-row"><dt>Sunday</dt><dd>Hearth lunch, 12pm – 4pm</dd></div>
+                <div class="hours-row"><dt>Monday</dt><dd>Closed</dd></div>
+              </dl>
+            </div>
+
+            <div class="loc-block" data-reveal data-reveal-delay="240">
+              <h3>Contact</h3>
+              <div class="contact-lines">
+                <a href="tel:+63281234567">(02) 8123 4567</a>
+                <a href="tel:+639171234567">0917 123 4567</a>
+                <a href="mailto:hello@emberandvine.com">hello@emberandvine.com</a>
+                <a href="mailto:events@emberandvine.com">events@emberandvine.com</a>
+              </div>
+            </div>
+
+          </aside>
+
+          <!-- RESERVATION FORM -->
+          <div class="res-panel" id="reserve" data-reveal data-reveal-delay="120">
+            <div class="res-form">
+              <div class="res-intro">
+                <p class="eyebrow">Reserve</p>
+                <h2 class="u-mt-sm">A table by the fire.</h2>
+                <p>Tell us when, and how many. We hold requests for fifteen minutes past booking time — after that, the bar finds you a seat anyway.</p>
+              </div>
+
+              <form id="reserve-form" novalidate>
+
+                <div class="field-grid">
+                  <div class="field field-full">
+                    <label for="res-name">Name</label>
+                    <input id="res-name" name="name" type="text" autocomplete="name" aria-describedby="err-name" required>
+                    <p class="field-error" id="err-name"></p>
+                  </div>
+                  <div class="field">
+                    <label for="res-email">Email</label>
+                    <input id="res-email" name="email" type="email" autocomplete="email" aria-describedby="err-email" required>
+                    <p class="field-error" id="err-email"></p>
+                  </div>
+                  <div class="field">
+                    <label for="res-phone">Phone (optional)</label>
+                    <input id="res-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="err-phone">
+                    <p class="field-error" id="err-phone"></p>
+                  </div>
+                  <div class="field">
+                    <label for="res-date">Date</label>
+                    <input id="res-date" name="date" type="date" aria-describedby="err-date" required>
+                    <p class="field-error" id="err-date"></p>
+                  </div>
+                  <div class="field">
+                    <label for="res-time">Time</label>
+                    <select id="res-time" name="time" aria-describedby="err-time" required>
+                      <option value="" selected>Select a time</option>
+                      <option value="5:00 pm">5:00 pm</option>
+                      <option value="5:30 pm">5:30 pm</option>
+                      <option value="6:00 pm">6:00 pm</option>
+                      <option value="6:30 pm">6:30 pm</option>
+                      <option value="7:00 pm">7:00 pm</option>
+                      <option value="7:30 pm">7:30 pm</option>
+                      <option value="8:00 pm">8:00 pm</option>
+                      <option value="8:30 pm">8:30 pm</option>
+                      <option value="9:00 pm">9:00 pm</option>
+                      <option value="9:30 pm">9:30 pm</option>
+                    </select>
+                    <p class="field-error" id="err-time"></p>
+                  </div>
+                  <div class="field">
+                    <label for="res-guests">Guests</label>
+                    <select id="res-guests" name="guests" aria-describedby="err-guests" required>
+                      <option value="" selected>Party size</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7 or more — email us</option>
+                    </select>
+                    <p class="field-error" id="err-guests"></p>
+                  </div>
+                  <div class="field field-full">
+                    <label for="res-notes">Anything we should know? (optional)</label>
+                    <textarea id="res-notes" name="notes" rows="3" placeholder="Allergies, occasions, accessibility needs&hellip;"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-foot">
+                  <button class="btn btn-primary" type="submit">Request a Table</button>
+                  <p class="form-demo-note">Demo site — your request isn&rsquo;t sent anywhere.</p>
+                </div>
+
+              </form>
+
+              <div class="form-success" id="reserve-success" role="status">
+                <p class="eyebrow">Request Received</p>
+                <h3 class="u-mt-sm">Thank you, <span id="reserve-first-name">friend</span>.</h3>
+                <p class="sum" id="reserve-summary"></p>
+                <p>We&rsquo;ll confirm by email shortly. If plans change, just call us — there&rsquo;s usually someone near the oven who can hear the phone.</p>
+                <p class="small-note">This is a design demo; nothing was actually sent. In a live build this would reach the restaurant.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- MAP -->
+        <div class="map-card" data-reveal>
+          <div class="map-art" aria-hidden="true">
+            <span class="map-pin">
+              <svg width="34" height="44" viewBox="0 0 34 44" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                <path d="M17 0C7.6 0 0 7.6 0 17c0 12.8 17 27 17 27s17-14.2 17-27C34 7.6 26.4 0 17 0z" fill="#6F2F2A"/>
+                <circle cx="17" cy="17" r="6.5" fill="#F5F1E8"/>
+              </svg>
+            </span>
+          </div>
+          <div class="map-info">
+            <h3>Getting Here</h3>
+            <p>48 Marlow Street, Riverside District, Pasig City — two blocks from the Rosario footbridge. Grab a Angkas or JoyRide and ask for the old print house, or drive and park along Marlow after 6pm when the restrictions lift. Bike racks out front beneath the old awning.</p>
+            <div class="map-actions">
+              <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=Riverside+Pasig+City" target="_blank" rel="noopener">Get Directions&nbsp;&nearr;</a>
+              <a class="dir-link" href="tel:+63281234567">Call (02) 8123 4567</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">Ember <em>&amp;</em> Vine</a>
+          <p class="footer-tag">Live-fire cooking and a short seasonal menu, in an old print shop in Pasig City.</p>
+          <ul class="footer-social">
+            <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Visit</h3>
+          <address>
+            <p>48 Marlow Street<br>Riverside District, Pasig City</p>
+          </address>
+          <ul>
+            <li><a href="tel:+63281234567">(02) 8123 4567</a></li>
+            <li><a href="mailto:hello@emberandvine.com">hello@emberandvine.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Hours</h3>
+          <div class="footer-hours">
+            <div><span>Tue – Thu</span><span>5 – 10pm</span></div>
+            <div><span>Fri – Sat</span><span>5 – 11pm</span></div>
+            <div><span>Sun</span><span>12 – 4pm</span></div>
+            <div><span>Mon</span><span>Closed</span></div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#reserve">Reservations</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Ember &amp; Vine. A fictional restaurant, created as a design concept.</p>
+        <p>Photography via Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
